@@ -1,0 +1,10 @@
+Sites I've used for help:
+- https://coolors.co/image-picker
+    - Used to extract the colors from the Logo images.
+    - Color Pallete Used: https://coolors.co/090c21-41a2ca-25375e-548ecf-a32bdb
+- https://unsplash.com/s/photos/phone-repair
+    - Used to get royalty-free images
+
+
+Requests:
+- Images of Joe next to a mobile tech van

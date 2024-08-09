@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      body {
+        background-color: #090C21;
+      }
+      /* Replaces the border color of the Bootstrap Theme */
+      .border-bottom {
+        border-color: #25375E !important;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark" style="background-color: #090C21 !important;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="logos/mark-02.svg" alt="Logo" class="d-inline-block align-text-top rounded img-fluid" width="6%">
+          Simply Tech Repairs
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+        </div>
+      </div>
+    </nav>
+    <div class="container" style="width: 60%; margin-top: 2%;">
+      <div id="carouselExampleDark" class="carousel carousel-dark slide carousel-fade">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner" style="border-radius: 20px;">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="repairImages/nikolai-chernichenko-4DLzZXyC8_k-unsplash.jpg" class="w-100 img-fluid" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 style="background-color: rgba(255, 255, 255, 0.5); border-radius: 8px;">Mobile Phone & Computer Repair</h5>
+              <button class="btn btn-primary">Get an Instant Quote!</button>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="repairImages/anton-maksimov-5642-su-R2ljPFJju1s-unsplash.jpg" class="w-100 img-fluid" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid text-center" style="color: white; margin-top: 1%;">
+    <h4 style="background-color: #162A54; border-radius: 10px; padding: 0.3%;">Repair Services</h4>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h5>iPhone</h5>
+          <img src="repairImages/denis-cherkashin-zgUkIMKeJq4-unsplash.jpg" class="img-fluid rounded">
+        </div>
+        <div class="col">
+          <h5>Android Devices</h5>
+          <img src="repairImages/sebastian-bednarek-BBuxnOkl2Uk-unsplash.jpg" class="img-fluid rounded">
+        </div>
+        <div class="col">
+          <h5>Other Smartphones</h5>
+          <img src="repairImages/matt-wojtas--baMCm2CLKM-unsplash.jpg" class="img-fluid rounded">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h5>iPads & Macbooks</h5>
+          <img src="repairImages/firmbee-com-OP2EQ5g-Zkw-unsplash.jpg" class="img-fluid rounded">
+        </div>
+        <div class="col">
+          <h5>Computers</h5>
+          <img src="repairImages/anthony-roberts-fMbiAi0rbkA-unsplash.jpg" class="img-fluid rounded">
+        </div>
+        <div class="col">
+          <h5>Other Devices</h5>
+          <img src="repairImages/silivan-munguarakarama-TmKrBBIHI8w-unsplash.jpg" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid" style="background-color: #090C21; color: white; border-top: 1px solid #25375E; margin-top: 2%;">
+    <div class="row text-center">
+        <p>Copyright © 2024 Simply Tech Repairs LLC. All Rights Reserved.</p>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
