@@ -36,7 +36,7 @@
     <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark" style="background-color: #090C21 !important;">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html" style="width: 50%;">
-          <img src="logos/logo-02.jpg" alt="Logo" class="d-inline-block align-text-top rounded img-fluid" style="width: 50%;">
+          <img src="logos/logo-02.jpg" alt="Logo" class="d-inline-block align-text-top rounded img-fluid simplyTechNavLogo" style="width: 50%;">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -58,7 +58,7 @@
     <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="light" style="background-color: white !important; display: none;">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html" style="width: 50%;">
-          <img src="logos/logo-01.jpg" alt="Logo" class="d-inline-block align-text-top rounded img-fluid" style="width: 50%;">
+          <img src="logos/logo-01.jpg" alt="Logo" class="d-inline-block align-text-top rounded img-fluid simplyTechNavLogo" style="width: 50%;">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -90,20 +90,20 @@
           </div>
           <div class="carousel-inner" style="border-radius: 20px;">
             <div class="carousel-item active" data-bs-interval="10000">
-              <img src="wallpaper/SimplyTechRepairWallpaper.png" class="w-100 img-fluid" alt="...">
+              <img src="wallpaper/SimplyTechRepairWallpaper.png" class="w-100 img-fluid carousal-image" alt="...">
               <div class="carousel-caption d-none d-md-block">
                 <h1 style="background-color: rgba(255, 255, 255, 0.5); border-radius: 8px; box-shadow: 0 0 10px #9ecaed;">We Bring the Fix to You!</h5>
               </div>
             </div>
             <div class="carousel-item" data-bs-interval="10000">
-              <img src="repairImages/nikolai-chernichenko-4DLzZXyC8_k-unsplash.jpg" class="w-100 img-fluid" alt="...">
+              <img src="repairImages/nikolai-chernichenko-4DLzZXyC8_k-unsplash.jpg" class="w-100 img-fluid carousal-image" alt="...">
               <div class="carousel-caption d-none d-md-block">
                 <h5 style="background-color: rgba(255, 255, 255, 0.5); border-radius: 8px;">Mobile Phone & Computer Repair</h5>
                 <button type="button" class="btn btn-primary bookAppointment">Book an Appointment!</button>
               </div>
             </div>
             <div class="carousel-item" data-bs-interval="2000">
-              <img src="repairImages/anton-maksimov-5642-su-R2ljPFJju1s-unsplash.jpg" class="w-100 img-fluid" alt="...">
+              <img src="repairImages/anton-maksimov-5642-su-R2ljPFJju1s-unsplash.jpg" class="w-100 img-fluid carousal-image" alt="...">
               <div class="carousel-caption d-none d-md-block">
                 <h5 style="background-color: rgba(255, 255, 255, 0.5); border-radius: 8px;">Is your device currently being repaired?</h5>
                 <button class="btn btn-primary checkRepairStatus">Check Repair Status</button>
@@ -119,6 +119,10 @@
           </button>
         </div>
       </div>
+    </div>
+    <div class="container alternative-to-carousal" style="color: black; text-align: center; display: none;">
+      <img src="wallpaper/SimplyTechRepairWallpaper.png" class="w-100 rounded img-fluid" alt="..." style="box-shadow: 0 0 10px #9ecaed; border: 2px solid #41A2CA;">
+      <h1 style="background-color: rgba(255, 255, 255, 2); border-radius: 8px; box-shadow: 0 0 10px #ae00ed; margin-top: 1%;">We Bring the Fix to You!</h1>
     </div>
     <div class="container-fluid text-center repair-services-container" style="color: white; margin-top: 1%;">
       <h4 class="simplyTechheaderSection" style="background-color: #162A54; border-radius: 10px; padding: 0.3%;">Repair Services</h4>
@@ -240,7 +244,7 @@
         $(".nav-link").removeClass("active");
         $("li .checkRepairStatus").addClass("active");
 
-        /*
+        /*w
           Hide: 
             - Header section container
             - Carousal container
@@ -266,10 +270,18 @@
             if (check) {
                 // Increase carousal size
                 $(".carousal-container").css("width", "100%");
+                // Increase logo size
+                $(".simplyTechNavLogo").css("width", "100%");
+                // Show alternative carousal
+                $(".alternative-to-carousal").show();
+                // Hide Carousal
+                $(".carousal-container").hide();
             }
         
             return check;
-        };
+      };
+
+      window.mobileCheck();
     </script>
   </body>
 </html>
