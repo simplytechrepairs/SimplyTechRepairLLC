@@ -8,6 +8,3 @@ Sites I've used for help:
 
 Requests:
 - Images of Joe next to a mobile tech van
-
-Needs to be done:
-- Mobile needs a separate Instant quote button. The button on the carousal disappears on mobile devices.
