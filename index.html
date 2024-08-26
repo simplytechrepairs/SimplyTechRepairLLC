@@ -37,6 +37,13 @@
         border: 2px solid #41A2CA;
         border-radius: 22px;
         font-family: 'Orbitron';
+        background-color: #162A54; 
+        padding: 0.3%;
+        text-align: center;
+      }
+      .blogPage {
+        color: white;
+        margin-top: 2%;
       }
       .footer-container {
         background-color: #0A0C21;
@@ -56,6 +63,9 @@
           <ul class="navbar-nav me-auto">
             <li class="nav-item">
               <a class="nav-link homePage active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link blogPageLink" aria-current="page" href="#">Blog</a>
             </li>
             <li class="nav-item">
               <a class="nav-link bookAppointment" aria-current="page" href="#">Book an Appointment</a>
@@ -93,7 +103,7 @@
     </nav>
     <div class="container-fluid site-contents">
       <div class="container-fluid text-center simplyTechheaderSection-container" style="color: white; margin-top: 1%;">
-        <h4 class="simplyTechheaderSection" style="background-color: #162A54; border-radius: 10px; padding: 0.3%;">Currently Serving the Warner Robins, Georgia Area</h5>
+        <h4 class="simplyTechheaderSection">Currently Serving the Warner Robins, Georgia Area</h5>
       </div>
       <div class="container carousal-container" style="width: 50%; margin-top: 2%;">
         <div id="carouselExampleDark" class="carousel carousel-dark slide carousel-fade">
@@ -141,7 +151,7 @@
       <h1 style="background-color: rgba(255, 255, 255, 2); border-radius: 8px; box-shadow: 0 0 10px #ae00ed; margin-top: 1%;">We Bring the Fix to You!</h1>
     </div>
     <div class="container-fluid text-center repair-services-container" style="color: white; margin-top: 1%;">
-      <h4 class="simplyTechheaderSection" style="background-color: #162A54; border-radius: 10px; padding: 0.3%;">Professional and Convenient Repair Services</h4>
+      <h4 class="simplyTechheaderSection">Professional and Convenient Repair Services</h4>
       <div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center;">
         <div class="card" style="width: 18rem;">
           <img src="repairImages/thisisengineering-IpTPp_aPbYE-unsplash.jpg" class="card-img-top" alt="...">
@@ -197,7 +207,8 @@
       <script id="repairdeskwidget" src="https://simplytechrepairsllc.repairdesk.co/widgets/includenew.js?token=66b3ef0a747961723068170&height=100%&width=100%&scrolling=yes"></script>
     </div>
     <!-- Blog -->
-    <!--<div>
+    <div class="container blogPage">
+      <h4 class="simplyTechheaderSection" style="margin-bottom: 2%;">Blog Posts</h4>
       <div id="retainable-rss-embed" 
         data-rss="https://medium.com/feed/@dequanmedina"
         data-maxcols="3" 
@@ -207,7 +218,7 @@
         data-buttonclass="btn btn-primary" 
         data-offset="-100">
       </div>
-    </div>-->
+    </div>
     <!-- End Blog -->
     <div class="container-fluid footer-container" style="color: white; border-top: 1px solid #25375E; margin-top: 2%;">
       <div class="row text-center">
@@ -225,27 +236,20 @@
       let darkNav = $(".navbar")[0];
       let lightNav = $(".navbar")[1];
 
-      /* Medium Blog */
-      function CallMediumBlogInfo() {
-        const RSS_URL = `https://medium.com/feed/@dequanmedina`;
-        let headers = new Headers();
-        
-        headers.append('Access-Control-Allow-Origin', '*');
-        headers.append('Access-Control-Allow-Credentials', 'true');
-
-        fetch(RSS_URL, {
-          method: 'GET',
-          headers: headers
-        })
-          .then(response => response.text())
-          .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
-          .then(data => {
-            console.log(data);
-          });
+      function HideOtherPageContent() {
+        /*
+          Hide: 
+            - Header section container
+            - Blog Page
+            - Carousal container
+            - Repair Services container
+            - Contact Us Page
+        */
+        $(".site-contents").hide();
+        $(".blogPage").hide();
+        $(".appointment-calendar-container").hide();
+        $(".repair-status-container").hide();
       }
-
-      CallMediumBlogInfo();
-      /* End Medium Blog */
 
       $(".light-mode-button").on("click", () => {
         // Change background color
@@ -266,22 +270,16 @@
       // Hide Repair Status Widget
       $(".repair-status-container").hide();
 
+      // Hide Blog Page
+      $(".blogPage").hide();
+
       // Book An Appointment
       $(".bookAppointment").on("click", () => {
         // Make the page link active in the nav bar
         $(".nav-link").removeClass("active");
         $("li .bookAppointment").addClass("active");
 
-        /*
-          Hide: 
-            - Header section container
-            - Carousal container
-            - Repair Services container
-        */
-        $(".site-contents").hide();
-
-        // Hide Repair Status Widget
-        $(".repair-status-container").hide();
+        HideOtherPageContent();
 
         // Display Appointment Calender Widget from Repair Desk
         $(".appointment-calendar-container").show();
@@ -296,16 +294,7 @@
         $(".nav-link").removeClass("active");
         $("li .checkRepairStatus").addClass("active");
 
-        /*
-          Hide: 
-            - Header section container
-            - Carousal container
-            - Repair Services container
-        */
-        $(".site-contents").hide();
-
-        // Hide Appointment Calendar Widget
-        $(".appointment-calendar-container").hide();
+        HideOtherPageContent();
 
         // Display Repair Tracker Widget from Repair Desk
         $(".repair-status-container").show();
@@ -314,25 +303,24 @@
         $(".repair-status-container iframe").css("min-height", "500px");
       });
 
+      // Blog Page
+      $(".blogPageLink").on("click", () => {
+        // Make the page link active in the nav bar
+        $(".nav-link").removeClass("active");
+        $("li .blogPageLink").addClass("active");
+
+        HideOtherPageContent();
+
+        $(".blogPage").show();
+      });
+
       // Contact Us Page
       $(".contactUsPage").on("click", () => {
         // Make the page link active in the nav bar
         $(".nav-link").removeClass("active");
         $("li .contactUsPage").addClass("active");
 
-        /*
-          Hide: 
-            - Header section container
-            - Carousal container
-            - Repair Services container
-        */
-        $(".site-contents").hide();
-
-        // Hide Appointment Calendar Widget
-        $(".appointment-calendar-container").hide();
-
-        // Hide Repair Status Widget
-        $(".repair-status-container").hide();
+        HideOtherPageContent();
       });
 
       // Check if a user is viewing the site on a mobile device
