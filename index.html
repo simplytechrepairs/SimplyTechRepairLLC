@@ -6,9 +6,12 @@
     <title>Simply Tech Repairs</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="icon" href="logos/mark-02.jpg">
+    <!-- Google Fonts API -->
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Orbitron|Montserrat">
     <style>
       body {
-        background-color: #090C21;
+        background-color: #0A0C21;
       }
       /* Replaces the border color of the Bootstrap Theme */
       .border-bottom {
@@ -19,6 +22,10 @@
         margin-right: 1%;
         margin-bottom: 1%;
         box-shadow: 0 0 10px #9ecaed;
+        font-family: 'Montserrat';
+      }
+      .card-title {
+        font-weight: bold;
       }
       .carousel {
         box-shadow: 0 0 10px #9ecaed;
@@ -29,11 +36,15 @@
         box-shadow: 0 0 10px #9ecaed;
         border: 2px solid #41A2CA;
         border-radius: 22px;
+        font-family: 'Orbitron';
+      }
+      .footer-container {
+        background-color: #0A0C21;
       }
     </style>
   </head>
   <body>
-    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark" style="background-color: #090C21 !important;">
+    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark" style="background-color: #0A0C21 !important;">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html" style="width: 50%;">
           <img src="logos/logo-02.jpg" alt="Logo" class="d-inline-block align-text-top rounded img-fluid simplyTechNavLogo" style="width: 50%;">
@@ -52,10 +63,13 @@
             <li class="nav-item">
               <a class="nav-link checkRepairStatus" aria-current="page" href="#">Check Repair Status</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link contactUsPage" aria-current="page" href="#">Contact Us</a>
+            </li>
         </div>
       </div>
     </nav>
-    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="light" style="background-color: white !important; display: none;">
+    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="light" style="background-color: #F6F7FC !important; display: none;">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html" style="width: 50%;">
           <img src="logos/logo-01.jpg" alt="Logo" class="d-inline-block align-text-top rounded img-fluid simplyTechNavLogo" style="width: 50%;">
@@ -79,7 +93,7 @@
     </nav>
     <div class="container-fluid site-contents">
       <div class="container-fluid text-center simplyTechheaderSection-container" style="color: white; margin-top: 1%;">
-        <h4 class="simplyTechheaderSection" style="background-color: #162A54; border-radius: 10px; padding: 0.3%;">Currently Servicing in the Warner Robins & Macon, Georgia Area</h5>
+        <h4 class="simplyTechheaderSection" style="background-color: #162A54; border-radius: 10px; padding: 0.3%;">Currently Serving the Warner Robins, Georgia Area</h5>
       </div>
       <div class="container carousal-container" style="width: 50%; margin-top: 2%;">
         <div id="carouselExampleDark" class="carousel carousel-dark slide carousel-fade">
@@ -91,22 +105,24 @@
           <div class="carousel-inner" style="border-radius: 20px;">
             <div class="carousel-item active" data-bs-interval="10000">
               <img src="wallpaper/SimplyTechRepairWallpaper.png" class="w-100 img-fluid carousal-image" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h1 style="background-color: rgba(255, 255, 255, 0.5); border-radius: 8px; box-shadow: 0 0 10px #9ecaed;">We Bring the Fix to You!</h5>
+              <!-- Carousal caption is positioned at the top of the carousal for this specific slide. -->
+              <div class="carousel-caption d-none d-md-block" style="bottom: 70%;">
+                <h1 style="color: white;">We Bring the Fix to You!</h1>
+                <button type="button" class="btn btn-info bookAppointment">Hassle-Free Estimate!</button>
               </div>
             </div>
             <div class="carousel-item" data-bs-interval="10000">
               <img src="repairImages/nikolai-chernichenko-4DLzZXyC8_k-unsplash.jpg" class="w-100 img-fluid carousal-image" alt="...">
               <div class="carousel-caption d-none d-md-block">
                 <h5 style="background-color: rgba(255, 255, 255, 0.5); border-radius: 8px;">Mobile Phone & Computer Repair</h5>
-                <button type="button" class="btn btn-primary bookAppointment">Book an Appointment!</button>
+                <button type="button" class="btn btn-info bookAppointment">See Your Hassle-Free Estimate!</button>
               </div>
             </div>
             <div class="carousel-item" data-bs-interval="2000">
               <img src="repairImages/anton-maksimov-5642-su-R2ljPFJju1s-unsplash.jpg" class="w-100 img-fluid carousal-image" alt="...">
               <div class="carousel-caption d-none d-md-block">
-                <h5 style="background-color: rgba(255, 255, 255, 0.5); border-radius: 8px;">Is your device currently being repaired?</h5>
-                <button class="btn btn-primary checkRepairStatus">Check Repair Status</button>
+                <h5 style="background-color: rgba(255, 255, 255, 0.5); border-radius: 8px;">Want to know the status of your device repair</h5>
+                <button class="btn btn-info checkRepairStatus">Check Repair Status</button>
               </div>
             </div>/
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
@@ -125,7 +141,7 @@
       <h1 style="background-color: rgba(255, 255, 255, 2); border-radius: 8px; box-shadow: 0 0 10px #ae00ed; margin-top: 1%;">We Bring the Fix to You!</h1>
     </div>
     <div class="container-fluid text-center repair-services-container" style="color: white; margin-top: 1%;">
-      <h4 class="simplyTechheaderSection" style="background-color: #162A54; border-radius: 10px; padding: 0.3%;">Repair Services</h4>
+      <h4 class="simplyTechheaderSection" style="background-color: #162A54; border-radius: 10px; padding: 0.3%;">Professional and Convenient Repair Services</h4>
       <div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center;">
         <div class="card" style="width: 18rem;">
           <img src="repairImages/thisisengineering-IpTPp_aPbYE-unsplash.jpg" class="card-img-top" alt="...">
@@ -158,9 +174,9 @@
         <div class="card" style="width: 18rem;">
           <img src="repairImages/ed-hardie-4BnNnEtAGP0-unsplash.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Book an Appointment</h5>
-            <p class="card-text">You can book an appointment or consultation regarding repair services for you device.</p>
-            <a class="btn btn-primary bookAppointment">Book an Appointment!</a>
+            <h5 class="card-title">See Your Hassle-Free Estimate!</h5>
+            <p class="card-text">Provide some details to see a cost estimate. Continue the process to schedule an appointment!</p>
+            <a class="btn btn-primary bookAppointment">Hassle-Free Estimate!</a>
           </div>
         </div>
         <div class="card" style="width: 18rem;">
@@ -180,7 +196,20 @@
     <div class="container-fluid repair-status-container" style="margin-top: 1%;">
       <script id="repairdeskwidget" src="https://simplytechrepairsllc.repairdesk.co/widgets/includenew.js?token=66b3ef0a747961723068170&height=100%&width=100%&scrolling=yes"></script>
     </div>
-    <div class="container-fluid footer-container" style="background-color: #090C21; color: white; border-top: 1px solid #25375E; margin-top: 2%;">
+    <!-- Blog -->
+    <!--<div>
+      <div id="retainable-rss-embed" 
+        data-rss="https://medium.com/feed/@dequanmedina"
+        data-maxcols="3" 
+        data-layout="grid" 
+        data-poststyle="inline" 
+        data-readmore="Read the rest" 
+        data-buttonclass="btn btn-primary" 
+        data-offset="-100">
+      </div>
+    </div>-->
+    <!-- End Blog -->
+    <div class="container-fluid footer-container" style="color: white; border-top: 1px solid #25375E; margin-top: 2%;">
       <div class="row text-center">
           <p>Copyright © 2024 Simply Tech Repairs LLC. All Rights Reserved.</p>
           <h2>This is a demo site. NOT Production.</h2>
@@ -191,14 +220,36 @@
     </div>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery_3_7_1.min.js"></script>
+    <script src="https://www.twilik.com/assets/retainable/rss-embed/retainable-rss-embed.js"></script>
     <script>
       let darkNav = $(".navbar")[0];
       let lightNav = $(".navbar")[1];
 
+      /* Medium Blog */
+      function CallMediumBlogInfo() {
+        const RSS_URL = `https://medium.com/feed/@dequanmedina`;
+        let headers = new Headers();
+        
+        headers.append('Access-Control-Allow-Credentials', '*');
+
+        fetch(RSS_URL, {
+          method: 'GET',
+          headers: headers
+        })
+          .then(response => response.text())
+          .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
+          .then(data => {
+            console.log(data);
+          });
+      }
+
+      CallMediumBlogInfo();
+      /* End Medium Blog */
+
       $(".light-mode-button").on("click", () => {
         // Change background color
-        $("body").css("background-color", "white");
-        $(".footer-container").css("background-color", "white");
+        $("body").css("background-color", "#F6F7FC");
+        $(".footer-container").css("background-color", "#F6F7FC");
 
         // Hide dark theme navbar
         $(darkNav).hide();
@@ -244,7 +295,7 @@
         $(".nav-link").removeClass("active");
         $("li .checkRepairStatus").addClass("active");
 
-        /*w
+        /*
           Hide: 
             - Header section container
             - Carousal container
@@ -260,6 +311,27 @@
 
         // Make iFrame height 500px
         $(".repair-status-container iframe").css("min-height", "500px");
+      });
+
+      // Contact Us Page
+      $(".contactUsPage").on("click", () => {
+        // Make the page link active in the nav bar
+        $(".nav-link").removeClass("active");
+        $("li .contactUsPage").addClass("active");
+
+        /*
+          Hide: 
+            - Header section container
+            - Carousal container
+            - Repair Services container
+        */
+        $(".site-contents").hide();
+
+        // Hide Appointment Calendar Widget
+        $(".appointment-calendar-container").hide();
+
+        // Hide Repair Status Widget
+        $(".repair-status-container").hide();
       });
 
       // Check if a user is viewing the site on a mobile device
@@ -281,6 +353,7 @@
             return check;
       };
 
+      // Run Mobile Check
       window.mobileCheck();
     </script>
   </body>
