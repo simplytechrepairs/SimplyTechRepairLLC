@@ -7,7 +7,11 @@ $("body").prepend(
     <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark" style="background-color: #0A0C21 !important;">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html" style="width: 50%;">
-          <img src="logos/logo-02.jpg" alt="Logo" class="d-inline-block align-text-top rounded img-fluid simplyTechNavLogo" style="width: 50%;">
+          <img src="logos/logo-02.jpg" alt="Simply Tech Repair Logo" class="d-inline-block align-text-top rounded img-fluid simplyTechNavLogo" style="width: 50%;">
+          <img src="iconography/bannerImage_iphone.svg" class="d-inline-block align-text-top rounded img-fluid bannerNavigationImage">
+          <img src="iconography/bannerImage_ipad.svg" class="d-inline-block align-text-top rounded img-fluid bannerNavigationImage">
+          <img src="iconography/bannerImage_gamingController.svg" class="d-inline-block align-text-top rounded img-fluid bannerNavigationImage">
+          <img src="iconography/bannerImage_computerWithMonitor.svg" class="d-inline-block align-text-top rounded img-fluid bannerNavigationImage">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -15,106 +19,28 @@ $("body").prepend(
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav me-auto">
             <li class="nav-item">
-              <a class="nav-link homePage active" aria-current="page" href="#"><img src="iconography/home.jpg" class="img-fluid"/>Home</a>
+              <a class="nav-link homePage active" aria-current="page" href="index.html"><img src="iconography/home.jpg" class="img-fluid"/>Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link blogPageLink" aria-current="page" href="blogPage.html"><img src="iconography/blog.jpg" class="img-fluid"/>Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link bookAppointment" aria-current="page" href="#"><img src="iconography/BookAppointment.jpg" class="img-fluid"/>Book an Appointment</a>
+              <a class="nav-link pricingPage" aria-current="page" href="pricing.html"><img src="iconography/dollar.svg" class="img-fluid"/>Pricing</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link checkRepairStatus" aria-current="page" href="#"><img src="iconography/CheckRepairStatus.jpg" class="img-fluid"/>Check Repair Status</a>
+              <a class="nav-link bookAppointment" aria-current="page" href="appointment_calendar.html"><img src="iconography/BookAppointment.jpg" class="img-fluid"/>Book an Appointment</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link contactUsPage" aria-current="page" href="#"><img src="iconography/email_dark.jpg" class="img-fluid"/>Contact Us</a>
+              <a class="nav-link checkRepairStatus" aria-current="page" href="check_repair_status.html"><img src="iconography/CheckRepairStatus.jpg" class="img-fluid"/>Check Repair Status</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link contactUsPage" aria-current="page" href="contact.html"><img src="iconography/email_dark.jpg" class="img-fluid"/>Contact Us</a>
             </li>
         </div>
       </div>
     </nav>
     `
 );
-
-function HideOtherPageContent() {
-    /*
-        Hide: 
-        - Header section container
-        - Blog Page
-        - Carousal container
-        - Repair Services container
-        - Contact Us Page
-    */
-    $(".site-contents").hide();
-    $(".blogPage").hide();
-    $(".appointment-calendar-container").hide();
-    $(".repair-status-container").hide();
-    $(".contactPage").hide();
-}
-
-$(".light-mode-button").on("click", () => {
-    // Change background color
-    $("body").css("background-color", "#F6F7FC");
-    $(".footer-container").css("background-color", "#F6F7FC");
-
-    // Hide dark theme navbar
-    $(darkNav).hide();
-    $(lightNav).show();
-
-    // Change color to white
-    $(".footer-container").css("color", "black");
-});
-
-// HomePage
-$(".homePage").on("click", () => {
-    // Make the page link active in the nav bar
-    $(".nav-link").removeClass("active");
-    $("li .homePage").addClass("active");
-
-    HideOtherPageContent();
-
-    $(".site-contents").show();
-});
-
-// Book An Appointment
-$(".bookAppointment").on("click", () => {
-    // Make the page link active in the nav bar
-    $(".nav-link").removeClass("active");
-    $("li .bookAppointment").addClass("active");
-
-    HideOtherPageContent();
-
-    // Display Appointment Calender Widget from Repair Desk
-    $(".appointment-calendar-container").show();
-
-    // Make iFrame height 1000px
-    $(".appointment-calendar-container iframe").css("min-height", "800px");
-});
-
-// Check Repair Status
-$(".checkRepairStatus").on("click", () => {
-    // Make the page link active in the nav bar
-    $(".nav-link").removeClass("active");
-    $("li .checkRepairStatus").addClass("active");
-
-    HideOtherPageContent();
-
-    // Display Repair Tracker Widget from Repair Desk
-    $(".repair-status-container").show();
-
-    // Make iFrame height 500px
-    $(".repair-status-container iframe").css("min-height", "500px");
-});
-
-// Contact Us Page
-$(".contactUsPage").on("click", () => {
-    // Make the page link active in the nav bar
-    $(".nav-link").removeClass("active");
-    $("li .contactUsPage").addClass("active");
-
-    HideOtherPageContent();
-
-    $(".contactPage").show();
-});
 
 // Check if a user is viewing the site on a mobile device
 window.mobileCheck = function() {

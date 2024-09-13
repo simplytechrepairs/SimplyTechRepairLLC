@@ -1,7 +1,11 @@
 body {
     background-color: #0A0C21;
     background-repeat: repeat-y;
-    background-image: url(..//wallpaper/dark_background3.jpg);
+    background-image: url(..//wallpaper/mainBackground_1.svg);
+  }
+  .bannerNavigationImage {
+    width: 10%;
+    margin-right: 5%;
   }
   /* Replaces the border color of the Bootstrap Theme */
   .border-bottom {
