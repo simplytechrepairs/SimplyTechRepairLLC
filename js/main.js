@@ -4,15 +4,17 @@ let lightNav = $(".navbar")[1];
 // Prepend navigation bar
 $("body").prepend(
     `
-    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark" style="background-color: #0A0C21 !important;">
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark" style="background-color: #0A0C21 !important;">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html" style="width: 50%;">
           <img src="logos/logo-02.jpg" alt="Simply Tech Repair Logo" class="d-inline-block align-text-top rounded img-fluid simplyTechNavLogo" style="width: 50%;">
+        </a>
+        <div style="display: inline; width: 40%;">
           <img src="iconography/bannerImage_iphone.svg" class="d-inline-block align-text-top rounded img-fluid bannerNavigationImage">
           <img src="iconography/bannerImage_ipad.svg" class="d-inline-block align-text-top rounded img-fluid bannerNavigationImage">
           <img src="iconography/bannerImage_gamingController.svg" class="d-inline-block align-text-top rounded img-fluid bannerNavigationImage">
           <img src="iconography/bannerImage_computerWithMonitor.svg" class="d-inline-block align-text-top rounded img-fluid bannerNavigationImage">
-        </a>
+        </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -56,6 +58,9 @@ window.mobileCheck = function() {
         $(".alternative-to-carousal").show();
         // Hide Carousal
         $(".carousal-container").hide();
+
+      // Keep pricing table containers at 100% for mobile
+      $(".pricing-tables-container .individual-service-pricing").css("width", "100%");
     }
 
     return check;

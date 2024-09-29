@@ -24,22 +24,23 @@
                 contact us.
             </p>
         </div>
-        <div class="container">
-            <h4 class="simplyTechheaderSection" style="margin-bottom: 2%;">Cell Phone Services</h4>
-            <table class="table table-dark table-striped-columns table-hover" style="text-align: center;">
+        <div class="container pricing-tables-container">
+            <div class="container individual-service-pricing">
+                <h4 class="simplyTechheaderSection" style="margin-bottom: 2%;">Cell Phone Services</h4>
+            <table class="table table-striped table-dark table-hover" style="text-align: center;">
                 <thead>
                     <tr>
                         <th scope="col" colspan="3">Screen/Digitizer Replacements</th>
                     </tr>
                     <tr>
                         <th scope="col">Manufacturer</th>
-                        <th scope="col">Phone Model (incl. variations)</th>
+                        <th scope="col">Phone Model<br />(incl. variations)</th>
                         <th scope="col">Typical Price Range</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td rowspan="6">Apple</td>
+                        <td class="align-middle" rowspan="6">Apple</td>
                         <td>iPhone 15</td>
                         <td>$275 - 615</td>
                     </tr>
@@ -124,27 +125,29 @@
                     </tr>
                 </tbody>
             </table>
-            <h4 class="simplyTechheaderSection" style="margin-bottom: 2%;">Tablet Services</h4>
+            </div>
+            <div class="container individual-service-pricing">
+                <h4 class="simplyTechheaderSection" style="margin-bottom: 2%;">Tablet Services</h4>
             <div class="container alert alert-info">
                 <p style="font-size: 20px;">All tablet-related issues, other than screen replacements, will require a non-
                     refundable diagnostics deposit before repair. The diagnostics deposit will go toward
                     any repair that is made.
                 </p>
             </div>
-            <table class="table table-dark table-striped-columns table-hover" style="text-align: center;">
+            <table class="table table-dark table-striped table-hover" style="text-align: center;">
                 <thead>
                     <tr>
                         <th scope="col" colspan="3">Screen/Digitizer Replacements</th>
                     </tr>
                     <tr>
                         <th scope="col">Manufacturer</th>
-                        <th scope="col">Phone Model (incl. variations)</th>
+                        <th scope="col">Phone Model<br />(incl. variations)</th>
                         <th scope="col">Typical Price Range</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td rowspan="5">Apple</td>
+                        <td class="align-middle" rowspan="5">Apple</td>
                         <td>iPad Air</td>
                         <td>$200 – 650</td>
                     </tr>
@@ -221,7 +224,9 @@
                     </tr>
                 </tbody>
             </table>
-            <h4 class="simplyTechheaderSection" style="margin-bottom: 2%;">Computer Services</h4>
+            </div>
+            <div class="container individual-service-pricing">
+                <h4 class="simplyTechheaderSection" style="margin-bottom: 2%;">Computer Services</h4>
             <div class="container alert alert-info">
                 <p style="font-size: 20px;">All computer-related issues, other than screen replacements, will require a non-
                     refundable diagnostics deposit before repair. The diagnostic deposit will go toward
@@ -229,7 +234,7 @@
                     which is infested with pests (such as roaches).
                 </p>
             </div>
-            <table class="table table-dark table-striped-columns table-hover" style="text-align: center;">
+            <table class="table table-dark table-striped table-hover" style="text-align: center;">
                 <thead>
                     <tr>
                         <th scope="col">Service</th>
@@ -283,14 +288,16 @@
                     </tr>
                 </tbody>
             </table>
-            <h4 class="simplyTechheaderSection" style="margin-bottom: 2%;">Console Services</h4>
+            </div>
+            <div class="container individual-service-pricing">
+                <h4 class="simplyTechheaderSection" style="margin-bottom: 2%;">Console Services</h4>
             <div class="container alert alert-info">
                 <p style="font-size: 20px;">The diagnostic deposit will go toward any repair that is made. A mandatory pest
                     control fee will be charged for any device which is infested with pests (such as
                     roaches).
                 </p>
             </div>
-            <table class="table table-dark table-striped-columns table-hover" style="text-align: center;">
+            <table class="table table-dark table-striped table-hover" style="text-align: center;">
                 <thead>
                     <tr>
                         <th scope="col">Service</th>
@@ -316,6 +323,7 @@
                     </tr>
                 </tbody>
             </table>
+            </div>
         </div>
     </div>
     <!-- End Pricing -->
@@ -330,3 +338,8 @@
     <script src="js/main.js"></script>
   </body>
 </html>
+<script>
+    // Make this page the active page on navbar
+    $(".nav-link").removeClass("active");
+    $(".pricingPage").addClass("active");
+</script>
