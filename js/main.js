@@ -27,11 +27,8 @@ $("body").prepend(
               <a class="nav-link blogPageLink" aria-current="page" href="blogPage.html"><img src="iconography/blog.jpg" class="img-fluid"/>Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link pricingPage" aria-current="page" href="pricing.html"><img src="iconography/dollar.svg" class="img-fluid"/>Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link bookAppointment" aria-current="page" href="appointment_calendar.html"><img src="iconography/BookAppointment.jpg" class="img-fluid"/>Book an Appointment</a>
-            </li>
+              <a class="nav-link pricingPage" aria-current="page" href="pricingOverview.html"><img src="iconography/dollar.svg" class="img-fluid"/>Pricing</a>
+            </li>            
             <li class="nav-item">
               <a class="nav-link checkRepairStatus" aria-current="page" href="check_repair_status.html"><img src="iconography/CheckRepairStatus.jpg" class="img-fluid"/>Check Repair Status</a>
             </li>
