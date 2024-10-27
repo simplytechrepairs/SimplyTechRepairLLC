@@ -24,13 +24,13 @@ $("body").prepend(
               <a class="nav-link homePage active" aria-current="page" href="index.html"><img src="iconography/home.jpg" class="img-fluid"/>Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link blogPageLink" aria-current="page" href="blogPage.html"><img src="iconography/blog.jpg" class="img-fluid"/>Blog</a>
+              <a class="nav-link blogPageLink" aria-current="page" href="blog.html"><img src="iconography/blog.jpg" class="img-fluid"/>Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link pricingPage" aria-current="page" href="pricingOverview.html"><img src="iconography/dollar.svg" class="img-fluid"/>Pricing</a>
+              <a class="nav-link pricingPage" aria-current="page" href="pricing-overview.html"><img src="iconography/dollar.svg" class="img-fluid"/>Pricing</a>
             </li>            
             <li class="nav-item">
-              <a class="nav-link checkRepairStatus" aria-current="page" href="check_repair_status.html"><img src="iconography/CheckRepairStatus.jpg" class="img-fluid"/>Check Repair Status</a>
+              <a class="nav-link checkRepairStatus" aria-current="page" href="check-repair-status.html"><img src="iconography/CheckRepairStatus.jpg" class="img-fluid"/>Check Repair Status</a>
             </li>
             <li class="nav-item">
               <a class="nav-link contactUsPage" aria-current="page" href="contact.html"><img src="iconography/email_dark.jpg" class="img-fluid"/>Contact Us</a>

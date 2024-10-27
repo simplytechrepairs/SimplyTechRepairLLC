@@ -55,6 +55,16 @@ body {
     text-align: center;
     color: white;
   }
+  .simplyTechheaderSection2 {
+    box-shadow: 0 0 10px  #c87fda;
+    border: 2px solid #b711df;
+    border-radius: 22px;
+    font-family: 'Orbitron';
+    background-color: purple; 
+    padding: 0.3%;
+    text-align: center;
+    color: white;
+  }
   .blogPage {
     color: white;
     margin-top: 2%;
