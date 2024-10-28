@@ -55,6 +55,8 @@ window.mobileCheck = function() {
         $(".alternative-to-carousal").show();
         // Hide Carousal
         $(".carousal-container").hide();
+        // Change to mobile background wallpaper
+        $(".body").css({"background-image": "url(wallpaper/mobile-background.svg)"})
 
       // Keep pricing table containers at 100% for mobile
       $(".pricing-tables-container .individual-service-pricing").css("width", "100%");
