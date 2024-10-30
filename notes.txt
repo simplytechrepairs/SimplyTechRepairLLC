@@ -7,4 +7,4 @@ Sites I've used for help:
 
 
 Requests:
-- Images of Joe next to a mobile tech van
+- Fix background on mobile - should use the mobile background image.
