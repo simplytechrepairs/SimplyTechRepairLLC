@@ -10,10 +10,10 @@ $("body").prepend(
           <img src="logos/logo-02.jpg" alt="Simply Tech Repair Logo" class="d-inline-block align-text-top rounded img-fluid simplyTechNavLogo" style="width: 50%;">
         </a>
         <div style="display: inline; width: 40%;">
-          <img src="iconography/bannerImage_iphone.svg" class="d-inline-block align-text-top rounded img-fluid bannerNavigationImage">
-          <img src="iconography/bannerImage_ipad.svg" class="d-inline-block align-text-top rounded img-fluid bannerNavigationImage">
-          <img src="iconography/bannerImage_gamingController.svg" class="d-inline-block align-text-top rounded img-fluid bannerNavigationImage">
-          <img src="iconography/bannerImage_computerWithMonitor.svg" class="d-inline-block align-text-top rounded img-fluid bannerNavigationImage">
+          <img src="iconography/bannerImage_iphone.svg" class="d-inline-block align-text-top rounded img-fluid bannerNavigationImage" alt="Phone Symbol">
+          <img src="iconography/bannerImage_ipad.svg" class="d-inline-block align-text-top rounded img-fluid bannerNavigationImage" alt="Tablet Symbol">
+          <img src="iconography/bannerImage_gamingController.svg" class="d-inline-block align-text-top rounded img-fluid bannerNavigationImage" alt="Gaming Console Symbol">
+          <img src="iconography/bannerImage_computerWithMonitor.svg" class="d-inline-block align-text-top rounded img-fluid bannerNavigationImage"  alt="Desktop Computer Symbol">
         </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -21,19 +21,19 @@ $("body").prepend(
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav me-auto">
             <li class="nav-item">
-              <a class="nav-link homePage active" aria-current="page" href="index.html"><img src="iconography/home.jpg" class="img-fluid"/>Home</a>
+              <a class="nav-link homePage active" aria-current="page" href="index.html"><img src="iconography/home.jpg" class="img-fluid" alt="Home"/>Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link blogPageLink" aria-current="page" href="blog.html"><img src="iconography/blog.jpg" class="img-fluid"/>Blog</a>
+              <a class="nav-link blogPageLink" aria-current="page" href="blog.html"><img src="iconography/blog.jpg" class="img-fluid" alt="Blog"/>Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link pricingPage" aria-current="page" href="pricing-overview.html"><img src="iconography/dollar.svg" class="img-fluid"/>Pricing</a>
+              <a class="nav-link pricingPage" aria-current="page" href="pricing-overview.html"><img src="iconography/dollar.svg" class="img-fluid" alt="Pricing"/>Pricing</a>
             </li>            
             <li class="nav-item">
-              <a class="nav-link checkRepairStatus" aria-current="page" href="check-repair-status.html"><img src="iconography/CheckRepairStatus.jpg" class="img-fluid"/>Check Repair Status</a>
+              <a class="nav-link checkRepairStatus" aria-current="page" href="check-repair-status.html"><img src="iconography/CheckRepairStatus.jpg" class="img-fluid" alt="Check Repair Statues"/>Check Repair Status</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link contactUsPage" aria-current="page" href="contact.html"><img src="iconography/email_dark.jpg" class="img-fluid"/>Contact Us</a>
+              <a class="nav-link contactUsPage" aria-current="page" href="contact.html"><img src="iconography/email_dark.jpg" class="img-fluid" alt="Contact us"/>Contact Us</a>
             </li>
         </div>
       </div>
