@@ -56,7 +56,9 @@ window.mobileCheck = function() {
         // Hide Carousal
         $(".carousal-container").hide();
         // Change to mobile background wallpaper - FIX
-        $(".body").css({"background-image": "url(..//wallpaper/mobile-background.svg)"});
+        //$("body").css({"background-image": "url(..//wallpaper/mobile-background.svg)"});
+        document.body.style.backgroundImage = url("mobile-background.svg");
+        document.body.style.backgroundImage.css("background-repeat", "no-repeat");
 
       // Keep pricing table containers at 100% for mobile
       $(".pricing-tables-container .individual-service-pricing").css("width", "100%");
