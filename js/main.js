@@ -56,7 +56,8 @@ window.mobileCheck = function () {
     // Hide Carousal
     $(".carousal-container").hide();
     // Change to mobile background wallpaper - FIX
-    //$("body").css({"background-image": "url(..//wallpaper/mobile-background.svg)"});
+    $("body").css({"background-image": "url(wallpaper//mobile-background.svg)"});
+    $("body").css({"background-position": "-225px"});
     // document.body.style.backgroundImage = url("mobile-background.svg");
     //document.body.style.backgroundImage.css("background-repeat", "no-repeat");
 
