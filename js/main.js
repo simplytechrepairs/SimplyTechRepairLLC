@@ -58,7 +58,7 @@ window.mobileCheck = function () {
     // Change to mobile background wallpaper
     $("body").css({ "background-image": "url(wallpaper//mobile-background.svg)" });
     //$("body").css({ "background-position": "-225px" });
-    $("body").css({ "background-size": "cover" });
+    $("body").css({ "background-size": "100% auto" });
 
     // Keep pricing table containers at 100% for mobile
     $(".pricing-tables-container .individual-service-pricing").css("width", "100%");
