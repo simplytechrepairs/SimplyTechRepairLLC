@@ -10,10 +10,15 @@ $("body").prepend(
           <img src="logos/logo-02.jpg" alt="Simply Tech Repair Logo" class="d-inline-block align-text-top rounded img-fluid simplyTechNavLogo" style="width: 50%;">
         </a>
         <div style="display: inline; width: 40%;">
-          <img src="iconography/bannerImage_iphone.svg" class="d-inline-block align-text-top rounded img-fluid bannerNavigationImage" alt="cell phones">
-          <img src="iconography/bannerImage_ipad.svg" class="d-inline-block align-text-top rounded img-fluid bannerNavigationImage" alt="tablets">
-          <img src="iconography/bannerImage_gamingController.svg" class="d-inline-block align-text-top rounded img-fluid bannerNavigationImage" alt="game consoles">
-          <img src="iconography/bannerImage_computerWithMonitor.svg" class="d-inline-block align-text-top rounded img-fluid bannerNavigationImage" alt="computers">
+          <a class="nav-item" aria-current="page" href="cell-phone-pricing.html" style="padding-right:2%; padding-left:2%;">
+          <img src="iconography/bannerImage_iphone.svg" alt= "Cell Phone Services" class="d-inline-block align-text-top rounded img-fluid bannerNavigationImage"/></a>  
+          <a class="nav-item" aria-current="page" href="tablet-pricing.html" style="padding-right:2%; padding-left:2%;">
+            <img src="iconography/bannerImage_ipad.svg" alt="Tablet Services" class="d-inline-block align-text-top rounded img-fluid bannerNavigationImage"/></a>
+          <a class="nav-item" aria-current="page" href="console-pricing.html" style="padding-right:2%; padding-left:2%;">
+            <img src="iconography/bannerImage_gamingController.svg" alt="Game Console Services" class="d-inline-block align-text-top rounded img-fluid bannerNavigationImage"/></a>
+          <a href="computer-pricing.html" style="padding-right:2%; padding-left:2%;">
+            <img src="iconography/bannerImage_computerWithMonitor.svg" class="d-inline-block align-text-top rounded img-fluid bannerNavigationImage" alt="Computer Services"/>
+          </a>
         </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
