@@ -17,8 +17,7 @@ $("body").prepend(
           <a class="nav-item" aria-current="page" href="console-pricing.html" style="padding-right:2%; padding-left:2%;">
             <img src="iconography/bannerImage_gamingController.svg" alt="Game Console Services" class="d-inline-block align-text-top rounded img-fluid bannerNavigationImage"/></a>
           <a class="nav-item" aria-current="page" href="computer-pricing.html" style="padding-right:2%; padding-left:2%;">
-            <img src="iconography/bannerImage_computerWithMonitor.svg" class="d-inline-block align-text-top rounded img-fluid bannerNavigationImage" alt="Computer Services"/>
-          </a>
+            <img src="iconography/bannerImage_computerWithMonitor.svg" class="d-inline-block align-text-top rounded img-fluid bannerNavigationImage" alt="Computer Services"/></a>
         </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
