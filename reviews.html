@@ -4,9 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Simply Tech Repairs: Check Repair Status</title>
-  <meta name="description"
-    content="Check for updates on your device repair online with ease! Submit ticket ID and your last name to see updates anytime.">
+  <title>Simply Tech Repairs: Reviews</title>
+  <meta name="description" content="See how satisfied our customers have been with our service.">
   <link rel="icon" type="image/x-icon" href="logos/favicon.svg">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
@@ -27,20 +26,31 @@
 </script>
 
 <body>
-  <!-- Check Repair Status -->
-  <div class="container-fluid repair-status-container" style="margin-top: 1%;">
-    <h1 class="simplyTechheaderSection" style="margin-bottom: 2%;">Check Repair Status</h1>
-    <div class="container alert alert-info" style="padding-top:1%; padding-bottom: 0%;">
-      <p style="font-size: 20px;"> Please contact us if you have any questions!
+  <!-- Consolidated Reviews -->
+  <div class="container-fluid blogPage">
+    <h1 class="simplyTechheaderSection" style="margin-bottom: 2%;">Customer Reviews</h1>
+    <div class="container" style="text-align: center; margin-top: 1%; margin-bottom: 2%">
+      <a href="https://g.page/r/Cf5rvLHEFM7GEBI/review" class="btn btn-info bookAppointment">Leave us a Google
+        Review!</a>
+    </div>
+    <div class="container alert alert-info" style="padding-top:1%; padding-bottom:0%;">
+      <p style="font-size: 20px;">Please leave us a Google Review using the link above! If you have any concerns or
+        questions with services
+        we have provided, please contact us so we can work to address them.
+      </p>
+      <p style="font-size: 20px;">See our customers reviews below!
       </p>
     </div>
-    <div class="container" style="text-align: center; margin-top: 1%; margin-bottom: 2%">
-      <a href="contact.html" class="btn btn-info bookAppointment">Contact Us</a>
-    </div>
-    <script id="repairdeskwidget"
-      src="https://simplytechrepairsllc.repairdesk.co/widgets/includenew.js?token=66b3ef0a747961723068170&height=100%&width=100%&scrolling=yes"></script>
+    <!--div class='sk-ww-social-media-aggregator' data-embed-id='25504909'></div>
+    <script src='https://widgets.sociablekit.com/social-media-aggregator/widget.js' defer></script-->
+    <h4 class="simplyTechheaderSection2" style="margin-bottom: 1%;">Google Reviews</h4>
+    <div class='sk-ww-google-reviews' data-embed-id='25504908'></div>
+    <script src='https://widgets.sociablekit.com/google-reviews/widget.js' defer></script>
+    <h4 class="simplyTechheaderSection2" style="margin-bottom: 1%;">Facebook Reviews</h4>
+    <div class='sk-ww-fb-page-reviews' data-embed-id='25504904'></div>
+    <script src='https://widgets.sociablekit.com/facebook-page-reviews/widget.js' defer></script>
   </div>
-  <!-- End Check Repair Status -->
+  <!-- End Reviews -->
   <div class="container-fluid footer-container" style="color: white; border-top: 1px solid #25375E; margin-top: 2%;">
     <div class="row text-center">
       <p>Copyright © 2025 Simply Tech Repairs LLC. All Rights Reserved.</p>
@@ -55,9 +65,5 @@
 <script>
   // Make this page the active page on navbar
   $(".nav-link").removeClass("active");
-  $(".checkRepairStatus").addClass("active");
-
-  $(() => {
-    $("iframe").css("height", "100vh");
-  });
+  $(".reviewPageLink").addClass("active");
 </script>

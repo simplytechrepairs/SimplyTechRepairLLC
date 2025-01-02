@@ -32,9 +32,12 @@ $("body").prepend(
             </li>
             <li class="nav-item">
               <a class="nav-link pricingPage" aria-current="page" href="pricing-overview.html"><img src="iconography/dollar.svg" class="img-fluid"/>Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link reviewPage" aria-current="page" href="reviews.html"><img src="iconography/reviews.svg" class="img-fluid"/>Reviews</a>
             </li>            
             <li class="nav-item">
-              <a class="nav-link checkRepairStatus" aria-current="page" href="check-repair-status.html"><img src="iconography/CheckRepairStatus.jpg" class="img-fluid"/>Check Repair Status</a>
+              <a class="nav-link checkRepairStatus" aria-current="page" href="check-repair-status.html"><img src="iconography/CheckRepairStatus.jpg" class="img-fluid"/>Repair Status</a>
             </li>
             <li class="nav-item">
               <a class="nav-link contactUsPage" aria-current="page" href="contact.html"><img src="iconography/email_dark.jpg" class="img-fluid"/>Contact Us</a>
