@@ -35,6 +35,9 @@ $("body").prepend(
             </li>
             <li class="nav-item">
               <a class="nav-link reviewPage" aria-current="page" href="reviews.html"><img src="iconography/reviews.svg" class="img-fluid"/>Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link policyPage" aria-current="page" href="privacy-policy-etc.html"><img src="iconography/icon-15.svg" class="img-fluid"/>Privacy Policy Etc</a>
             </li>            
             <li class="nav-item">
               <a class="nav-link checkRepairStatus" aria-current="page" href="check-repair-status.html"><img src="iconography/CheckRepairStatus.jpg" class="img-fluid"/>Repair Status</a>
