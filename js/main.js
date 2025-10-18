@@ -39,11 +39,6 @@ $("body").prepend(
             <li class="nav-item">
               <a class="nav-link policyPage" aria-current="page" href="privacy-policy-etc.html"><img src="iconography/icon-15.svg" class="img-fluid"/>Privacy Policy Etc</a>
             </li>            
-            /** 
-            *<!li class="nav-item">
-            *  <a class="nav-link checkRepairStatus" aria-current="page" href="check-repair-status.html"><img src="iconography/CheckRepairStatus.jpg" class="img-fluid"/>Repair Status</a>
-            *</li> 
-            */
             <li class="nav-item">
               <a class="nav-link contactUsPage" aria-current="page" href="contact.html"><img src="iconography/email_dark.jpg" class="img-fluid"/>Contact Us</a>
             </li>
